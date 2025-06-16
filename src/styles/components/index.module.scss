@@ -1,0 +1,7 @@
+@use './navbar.module.scss' as navbar;
+@use './header.module.scss' as header;
+
+:export {
+  navbar: navbar;
+  header: header;
+}

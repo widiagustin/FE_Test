@@ -1,0 +1,12 @@
+.header {
+  height: 60px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--mantine-color-gray-3);
+}
+
+.chevron {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}

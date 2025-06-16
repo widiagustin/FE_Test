@@ -1,0 +1,77 @@
+// Variables
+$border-radius: 10px;
+$transition-duration: 150ms;
+
+// Mixins
+@mixin hover-state {
+  &:hover {
+    background-color: var(--mantine-color-blue-denim-light);
+    color: var(--mantine-color-blue-denim-filled);
+  }
+}
+
+@mixin active-state {
+  &.active {
+    background-color: var(--mantine-color-blue-denim-filled);
+    color: var(--mantine-color-white);
+  }
+}
+
+.control {
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  color: var(--mantine-color-text);
+  font-size: var(--mantine-font-size-sm);
+  border-radius: $border-radius;
+  transition: all $transition-duration ease;
+  margin-bottom: 5px;
+
+  @include hover-state;
+  @include active-state;
+
+  // Nested styles for better organization
+  .iconWrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--mantine-spacing-md);
+  }
+}
+
+.link {
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  padding-left: var(--mantine-spacing-md);
+  margin-left: var(--mantine-spacing-xl);
+  font-size: var(--mantine-font-size-sm);
+  color: var(--mantine-color-gray-7);
+  border-left: 1px solid var(--mantine-color-gray-3);
+  border-radius: 10px;
+  transition: all $transition-duration ease;
+
+  @include hover-state;
+  @include active-state;
+
+  &.active {
+    border-left-color: var(--mantine-color-blue-denim-filled);
+  }
+}
+
+.chevron {
+  transition: transform $transition-duration ease;
+}
+
+// Nested media query for better organization
+@media (max-width: 768px) {
+  .control {
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  }
+
+  .link {
+    margin-left: var(--mantine-spacing-lg);
+    padding-left: var(--mantine-spacing-sm);
+  }
+}
