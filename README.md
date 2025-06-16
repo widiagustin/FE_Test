@@ -1,29 +1,53 @@
-# Mantine Vite template
+# 📊 Frontend Test – Traffic & Revenue Report Web App
 
-## Features
+As part of the effort to monitor traffic transactions and revenue, **Jasa Marga** plans to develop a web application to manage traffic and toll road revenue report data.
 
-This template comes with the following features:
+This application is designed to help collect, visualize, and analyze daily data from toll booths across different branches.
 
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+---
 
-## npm scripts
+## 🛠️ Prerequisites
 
-## Build and dev scripts
+Before running this application, please ensure you have the following installed on your local machine:
 
-- `dev` – start development server
-- `build` – build production version of the app
-- `preview` – locally preview production build
+- **Git**
+- **Docker**
+- **docker-compose**
 
-### Testing scripts
+---
 
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
+## 🚀 Steps to Run
 
-### Other scripts
+1. **Clone this repository**  
+   Run the following command in your terminal:
 
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+   ```bash
+   git clone https://github.com/widiagustin/FE_Test.git
+   ```
+
+2. **Change the working directory to the project folder**
+
+   ```bash
+   cd /FE_Test
+   ```
+
+3. **Start the service using docker-compose**
+
+   ```bash
+   docker-compose up frontend
+   ```
+
+---
+
+## 🌐 Access the Application
+
+Once the service is running, open your browser and navigate to:
+
+```
+http://localhost:3000/login
+```
+
+---
+
+Please contact the development team if you encounter any issues while running the application.  
+Thank you.
